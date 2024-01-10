@@ -9,7 +9,7 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .navbox1 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   height: 64px;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .navbox2 {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   height: 64px;
   padding: 0px 20px;
