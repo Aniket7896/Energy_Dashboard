@@ -1,4 +1,4 @@
-.sidebox {
+/* .sidebox {
   height: 100vh;
   width: 17vw;
   font-feature-settings: "clig" off, "liga" off;
@@ -6,8 +6,9 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 120% */
+  line-height: 18px; 
   background-color: #181818;
+  overflow: hidden;
 }
 
 .logo-box {
@@ -21,42 +22,41 @@
 
 .logo {
   border-top: 1px solid #000;
-  
   width: 219px;
   padding: 13px 10px 13px 20px;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .boxes1 {
-  display: flex;
   width: 249px;
-  padding: 10px 15px 15px 15px;
-  flex-direction: column;
+  padding: 10px 0;
   align-items: center;
-  gap: 10px;
   border-top: 1px solid #2c2c2c;
   border-bottom: 1px solid #2c2c2c;
   background-color: #181818;
 }
-
+.boxes1 > div {
+  margin: 20px 0;
+}
 .first {
   display: flex;
   width: 249px;
-  padding: 10px 15px 15px 15px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
 .text {
   color: #5c5c5c;
   text-transform: uppercase;
-  padding-right: 100px;
+  padding-right: 150px;
+
+
+  font-size: 14px;
 }
 .energy-box {
   display: flex;
   justify-content: space-around;
   width: 219px;
-  height: 50px;
+
 }
 .energy {
   color: #fff;
@@ -64,4 +64,130 @@
 .second {
   display: flex;
   color: #fff;
+}
+
+.second div:first-child {
+  margin: -5px 3px;
+}
+
+.boxes2 {
+
+  width: 249px;
+  padding: 10px 0;
+  align-items: center;
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+  background-color: #181818;
+}
+.boxes2 > div {
+  margin: 13px 20px;
+}
+
+.wasteBox {
+  color: #fff;
+}
+
+.btn button {
+  margin: 50px 31px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 11px;
+  background: #02ab6c;
+} */
+
+.sideBar {
+  width: 20vw;
+  height: 100vh;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #181818;
+}
+.logo {
+  width: 219px;
+  padding: 13px 0px 13px 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo img {
+  padding: 15px 10px 15px 20px;
+}
+.firstBox {
+  padding: 10px 10px;
+  /* border: 2px solid red; */
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+}
+.firstBox div {
+  margin: 15px;
+}
+
+.texts {
+  color: #fff;
+}
+.text {
+  color: #5c5c5c;
+  text-transform: uppercase;
+  padding-right: 150px;
+  font-size: 14px;
+  /* border: 2px solid green; */
+}
+.energy-level {
+  display: flex;
+  padding: 10px 10px;
+  /* border: 2px solid green; */
+}
+.energy-level div {
+  margin: 0px 5px;
+}
+.water-level {
+  display: flex;
+  padding: 10px 0px;
+  /* border: 2px solid green; */
+}
+.water-level div {
+  margin: 0px 5px;
+}
+
+.secondBox {
+  /* border: 2px solid blue; */
+  padding: 20px 20px;
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.secondBox div {
+  margin: 30px 15px;
+}
+
+.energy-boxes {
+  display: flex;
+  /* border: 2px solid yellow; */
+}
+.energy-boxes div {
+  margin: 0px 5px;
+}
+.wasteBoxes {
+  display: flex;
+  /* border: 2px solid orange; */
+}
+.wasteBoxes div {
+  margin: 5px;
+}
+
+.thirdBox {
+  /* border: 2px solid blue; */
+  padding: 20px 20px;
+  color: #fff;
+}
+.thirdBox button {
+  margin: 20px;
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 11px;
+  background: #02ab6c;
 }
