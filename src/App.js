@@ -5,12 +5,14 @@ import Sidebar from './components/Sidebar';
 import BarChart from './components/BarChart';
 import userdata from './Data';
 import { useState } from 'react';
+import PieChart from './components/PieChart';
+import Table from './components/Table';
 
 function App() {
   
 
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','Aug','Sept','Oct','Nov','Dec'];
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','Aug','Sept'];
   const [data, setData] = useState({
     labels,
     datasets: [
@@ -38,19 +40,6 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','
 
 // =========================options=========================
 
-//  const options = {
-//   responsive: true,
-//   plugins: {
-//     legend: {
-//       position: 'top',
-//     },
-//     title: {
-//       display: true,
-//       text: 'Chart.js Bar Chart',
-//     },
-//   },
-// };
-
 
   return (
     <>
@@ -59,8 +48,18 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','
         <div className="content-container">
           <Navbar />
           <div className="page">
-            <Boxes />
-            <BarChart chartData={data}  />
+            <div>
+              <Boxes />
+            </div>
+            <div>
+              <BarChart chartData={data} />
+            </div>
+            <div>
+              <PieChart chartData={data} />
+            </div>
+            <div>
+              <Table/>
+            </div>
           </div>
         </div>
       </div>

@@ -1,19 +1,12 @@
-/* .App {
-  text-align: center;
-  display: flex;
-}
-.page{
-  display: flex;
-  justify-content: center;
- 
-} */
 
 .App{
+
   display: flex;
   background: linear-gradient(0deg, rgba(2, 171, 108, 0.04) 0%, rgba(2, 171, 108, 0.04) 100%), #FFF;
 }
 
 .content-container {
+
   flex-grow: 1;
   display: flex;
   flex-direction: column;
